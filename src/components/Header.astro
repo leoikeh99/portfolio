@@ -1,0 +1,58 @@
+---
+import "../styles/layoutStyles.css";
+---
+
+<header>
+  <div class="container">
+    <p>LEONARD</p>
+    <nav>
+      <ul>
+        <li><a href="#" class="active">HOME</a></li>
+        <li><a href="#what-i-do">WHAT I DO</a></li>
+        <li><a href="#my-tools">MY TOOLS</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<style>
+  header {
+    color: var(--clr-neutral-100);
+    background-color: var(--clr-neutral-700);
+    padding: 1.2rem 0;
+  }
+
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  li {
+    list-style: none;
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-semi-bold);
+  }
+
+  a {
+    color: var(--clr-neutral-100);
+  }
+
+  a.active {
+    color: var(--clr-primary-400);
+  }
+
+  p {
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-bold);
+  }
+</style>
