@@ -2,3 +2,9 @@
     max-width: min(90%, 1050px);
     margin: 0 auto;
 }
+
+.space-out{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

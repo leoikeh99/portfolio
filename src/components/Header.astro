@@ -1,20 +1,30 @@
 ---
 import "../styles/layoutStyles.css";
+import MenuToggle from "./MenuToggle.astro";
 ---
 
 <header>
   <div class="container">
-    <p>LEONARD</p>
-    <nav>
-      <ul>
-        <li><a href="#" class="active">HOME</a></li>
-        <li><a href="#what-i-do">WHAT I DO</a></li>
-        <li><a href="#my-tools">MY TOOLS</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </nav>
+    <div class="space-out">
+      <p>LEONARD</p>
+      <nav
+        class="primary-navigation"
+        id="primary-navigation"
+        data-visible="false"
+      >
+        <ul>
+          <li><a href="#" class="active">HOME</a></li>
+          <li><a href="#what-i-do">WHAT I DO</a></li>
+          <li><a href="#my-tools">MY TOOLS</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="menu">
+        <MenuToggle ariaControls="primary-navigation" />
+      </div>
+    </div>
   </div>
 </header>
 
@@ -25,10 +35,9 @@ import "../styles/layoutStyles.css";
     padding: 1.2rem 0;
   }
 
-  header .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  p {
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-semi-bold);
   }
 
   ul {
@@ -40,7 +49,7 @@ import "../styles/layoutStyles.css";
   li {
     list-style: none;
     font-size: var(--fs-sm);
-    font-weight: var(--fw-semi-bold);
+    font-weight: var(--fw-regular);
   }
 
   a {
@@ -51,8 +60,45 @@ import "../styles/layoutStyles.css";
     color: var(--clr-primary-400);
   }
 
-  p {
-    font-size: var(--fs-xl);
-    font-weight: var(--fw-bold);
+  .menu {
+    display: none;
+  }
+
+  @media (max-width: 720px) {
+    .menu {
+      display: block;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      right: 0;
+      min-height: 100dvh;
+      width: min(100%, 400px);
+      background: hsla(0, 0%, 0%, 0.9);
+      padding: min(30vh, 10rem) 2rem;
+      transform: translateX(100%);
+    }
+
+    @supports (backdrop-filter: blur(2rem)) {
+      nav {
+        background: hsla(0, 0%, 0%, 0.8);
+        backdrop-filter: blur(2rem);
+      }
+    }
+
+    nav[data-visible="true"] {
+      transform: translateX(0);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    ul {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    li {
+      font-size: var(--fs-xl);
+    }
   }
 </style>

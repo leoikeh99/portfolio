@@ -31,6 +31,7 @@ const {
   </head>
   <body>
     <slot />
+    <script src="../index.js"></script>
   </body>
 </html>
 <style is:global>
@@ -84,6 +85,20 @@ const {
   .text-sm {
     font-size: var(--fs-text-sm);
     font-weight: var(--fw-regular);
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
 
   /* Box sizing rules */
