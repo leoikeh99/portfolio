@@ -41,7 +41,7 @@ async function sendEmail(data) {
         showAlert("error", "Something went wrong");
         return;
       }
-      showAlert("success", "Sent, I will get back to you");
+      showAlert("success", "Great, I will get back to you soon");
     })
     .catch((error) => {
       console.log(error);
