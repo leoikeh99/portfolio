@@ -1,5 +1,6 @@
 ---
 import Icon from "astro-icon";
+import Alert from "./Alert.astro";
 ---
 
 <section id="contact">
@@ -50,7 +51,8 @@ import Icon from "astro-icon";
           >
         </div>
       </div>
-      <form action="">
+      <form action="" method="post">
+        <Alert />
         <div class="form-group">
           <label for="name">Name</label>
           <input type="text" placeholder="Enter your name" name="name" />
@@ -175,6 +177,11 @@ import Icon from "astro-icon";
     background-color: var(--clr-primary-500);
   }
 
+  button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
   @media (max-width: 884px) {
     .content {
       flex-direction: column;
@@ -182,3 +189,10 @@ import Icon from "astro-icon";
     }
   }
 </style>
+
+<script>
+  const token = import.meta.env.PUBLIC_EMAIL_ACCESS_TOKEN;
+  import handleContactForm from "../utils/handleContactForm";
+
+  handleContactForm(token);
+</script>
