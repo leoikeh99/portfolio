@@ -1,0 +1,55 @@
+---
+interface Props {
+  title: string;
+  icon: string;
+  body: string;
+}
+const { title, icon, body } = Astro.props;
+
+import Icon from "astro-icon";
+---
+
+<div class="skill">
+  <div class="icon">
+    <Icon
+      name={icon}
+      fill="var(--clr-primary-400)"
+      height="30px"
+      width="30px"
+    />
+  </div>
+  <h3>{title}</h3>
+  <p>{body}</p>
+</div>
+
+<style>
+  .skill {
+    display: grid;
+    justify-items: center;
+    gap: 1.125rem;
+    border: 2px solid var(--clr-neutral-100);
+    border-radius: 0.5rem;
+    padding: 1.875rem 0.625rem;
+    text-align: center;
+  }
+
+  .skill .icon {
+    height: 64px;
+    width: 64px;
+    border: 2px solid var(--clr-neutral-100);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+  }
+
+  .skill h3 {
+    font-size: 1.17rem;
+    font-weight: var(--fw-bold);
+    color: var(--clr-neutral-100);
+  }
+
+  .skill p {
+    color: var(--text-clr-secondary);
+    font-weight: var(--fw-medium);
+  }
+</style>

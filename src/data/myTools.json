@@ -1,0 +1,67 @@
+[
+    {
+        "name":"HTML",
+        "icon":"html5",
+        "color":"#e34c26"
+    },
+    {
+        "name":"CSS",
+        "icon":"css3-alt",
+        "color":"#264de4"
+    },
+    {
+        "name":"JAVASCRIPT",
+        "icon":"js",
+        "color":"#f0db4f"
+    },
+    {
+        "name":"TYPESCRIPT",
+        "icon":"typescript",
+        "color":"#3178c6"
+    },
+    {
+        "name":"REACT",   
+        "icon":"react",
+        "color":"#61dafb"
+    },
+    {
+        "name":"SASS",
+        "icon":"sass",
+        "color":"#cc6699"
+    },
+    {
+        "name":"TAILWIND CSS",
+        "icon":"tailwind",
+        "color":"#38bdf8"
+    },
+    {
+        "name":"STYLED COMPONENTS",
+        "icon":"styled-components",
+        "color":"#FF00FF"
+    },
+    {
+        "name":"NODE JS",
+        "icon":"node",
+        "color":"#83CD29"
+    },
+    {
+        "name":"NEXT JS",
+        "icon":"nextjs",
+        "color":"#FFFFFF"
+    },
+    {
+        "name":"ASTRO",
+        "icon":"astro",
+        "color":"#FF5F00"
+    },
+    {
+        "name":"MONGODB",
+        "icon":"mongodb",
+        "color":"#47A248"
+    },
+    {
+        "name":"POSTGRES",
+        "icon":"postgresql",
+        "color":"#336791"
+    }
+]

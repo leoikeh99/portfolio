@@ -1,0 +1,89 @@
+[
+    {
+      "image": "https://res.cloudinary.com/wazza99/image/upload/c_scale,w_1280/v1676274942/kanaban-management.vercel.app_9065eb58-6c32-43c4-8d50-6c06f47e64b8_3_alucwr.png",
+      "name": "Kanaban Task Manager",
+      "desc": "Efficient kanban task manager app uses visual boards to organize tasks and flexible task cards for better productivity.",
+      "live": "https://kanaban-management.vercel.app/",
+      "code": "https://github.com/leoikeh99/Kanaban-Management", 
+      "techs": [
+        { "name": "HTML5", "icon": "html5", "color": "#E34C26" },
+        { "name": "CSS3", "icon": "css3-alt", "color": "#264DE4" },
+        { "name": "TYPESCRIPT", "icon": "typescript", "color": "#3178C6" },
+        { "name": "NextJs"  },
+        { "name": "Postgresql", "icon": "postgresql", "color": "#336791" },
+        { "name": "Context API" },
+        { "name": "Prisma ORM" },
+        { "name": "NextAuth" }
+      ]
+    },
+    {
+      "image": "https://res.cloudinary.com/wazza99/image/upload/v1649517189/invoice_w1mqee.png",
+      "name": "Invoice App",
+      "desc": "This is a frontend application built using react, an app that allows users to keep track of their invoices and perform all sorts of actions to their invoices.",
+      "live": "https://invoiceapp1000.netlify.app/",
+      "code": "https://github.com/leoikeh99/InvoiceApp", 
+      "techs": [
+        { "name": "Tailwind CSS", "icon": "tailwind", "color": "#06B6D4" },
+        { "name": "JAVASCRIPT", "icon": "js", "color": "#F0DB4F" },
+        { "name": "REACTJS", "icon": "react", "color": "#61DBFB" },
+        { "name": "Context API" }
+      ]
+    },
+    {
+      "image": "/images/audiophile.png",
+      "name": "Audiophile",
+      "desc": "Audiophile is an e-commerce website that enables users to buy audiophile gear.",
+      "live": "https://audiophile-gamma.vercel.app/",
+      "code": "https://github.com/leoikeh99/audiophile", 
+      "techs": [
+        { "name": "NextJs" },
+        { "name": "Styled Components", "icon": "styled-components","color": "#DB7093" },
+        { "name": "Framer motion" },
+        { "name": "Formik" },
+        { "name": "JAVASCRIPT", "icon": "js", "color": "#F0DB4F" }
+      ]
+    },
+    {
+      "image": "https://res.cloudinary.com/wazza99/image/upload/c_scale,q_auto,w_700/v1674649040/tictactoe_mblhap.png",
+      "name": "Tic-Tac-Toe game",
+      "desc": "This is a tic-tac-toe game that enables users to play versus another present user, play versus a friend online and also play against a strong computer.",
+      "live": "https://tic-tac-toe-ma15.onrender.com/",
+      "code": "https://github.com/leoikeh99/tic-tac-toe-online", 
+      "techs": [
+        { "name": "HTML5", "icon": "html5", "color": "#E34C26" },
+        { "name": "CSS3", "icon": "css3-alt", "color": "#264DE4" },
+        { "name": "JAVASCRIPT", "icon": "js", "color": "#F0DB4F" },
+        { "name": "REACTJS", "icon": "react", "color": "#61DBFB" },
+        { "name": "NodeJs", "icon": "node", "color": "#68A063" },
+        { "name": "Socket.io", "icon": "socketio", "color": "#4DB33D" }
+      ]
+    },
+    {
+      "image": "https://res.cloudinary.com/wazza99/image/upload/v1674650385/entertainmentweb_n6jpeg.png",
+      "name": "Entertainment web",
+      "desc": "A movie app where users could browse and bookmark thier favourite movies and tv series.",
+      "live": "https://entertainment-web.vercel.app/",
+      "code": "https://github.com/leoikeh99/entertainment-web/blob/main/README.md", 
+      "techs": [
+        { "name": "NextJs" },
+        { "name": "Styled Components", "icon": "styled-components","color": "#DB7093" },
+        { "name": "MongoDb", "icon": "mongodb", "color": "#4DB33D" },
+        { "name": "TYPESCRIPT", "icon": "typescript", "color": "#3178C6" },
+        {"name":"REACTJS","icon":"react","color":"#61DBFB"}
+      ]
+    },
+    {
+      "image":"/images/dictionary.png",
+      "name": "Dictionary app",
+      "desc": "This is a dictionary app that allows users to search for words and get their meaning and also listen to the pronunciation via audio.",
+      "live": "https://joyful-chebakia-d3a599.netlify.app/",
+      "code": "https://github.com/leoikeh99/dictionary-app",
+      "techs": [ 
+        { "name": "CSS3", "icon": "css3-alt", "color": "#264DE4" },
+        { "name": "JAVASCRIPT", "icon": "js", "color": "#F0DB4F" },
+        { "name": "REACTJS", "icon": "react", "color": "#61DBFB" },
+        {"name":"Styled Components","icon":"styled-components","color":"#DB7093"}
+
+      ]
+    }
+  ]

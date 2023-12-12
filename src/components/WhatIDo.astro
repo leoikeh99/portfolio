@@ -1,0 +1,44 @@
+---
+import "../styles/uiStyles.css";
+import { getCollection } from "astro:content";
+import SkillItem from "./SkillItem.astro";
+
+const skills = await getCollection("skills");
+---
+
+<section id="what-i-do">
+  <div class="container">
+    <h2 class="section-heading">WHAT I DO</h2>
+
+    <div class="skills">
+      {
+        skills
+          .reverse()
+          .map((skill) => (
+            <SkillItem
+              title={skill.data.title}
+              icon={skill.data.icon}
+              body={skill.body}
+            />
+          ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    background-color: var(--clr-neutral-700);
+    padding-block: 6rem;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    gap: 2rem;
+  }
+</style>

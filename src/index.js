@@ -1,14 +1,5 @@
-const primaryNav = document.querySelector(".primary-navigation");
-const menuToggle = document.querySelector(".menu-toggle");
+import handleIntroAnimation from "./utils/handleIntroAnimation";
+import handleNavBar from "./utils/handleNavBar";
 
-menuToggle.addEventListener("click", () => {
-  const visibility = primaryNav.getAttribute("data-visible");
-
-  if (visibility === "false") {
-    primaryNav.setAttribute("data-visible", true);
-    menuToggle.setAttribute("aria-expanded", true);
-    return;
-  }
-  primaryNav.setAttribute("data-visible", false);
-  menuToggle.setAttribute("aria-expanded", false);
-});
+handleNavBar();
+handleIntroAnimation();

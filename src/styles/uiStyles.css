@@ -1,0 +1,15 @@
+.btnLink{
+    color:var(--clr-neutral-100);
+    border: 2px solid var(--clr-neutral-100); 
+    font-weight: var(--fw-semi-bold);
+    border-radius: 4px;
+    display: inline-block;
+    padding: 20px 50px;
+    cursor: pointer;
+}
+
+.btnLink:hover{
+    border-color: var(--clr-primary-400);
+    background-color: var(--clr-primary-400);
+    transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}

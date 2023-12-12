@@ -6,18 +6,18 @@ import MenuToggle from "./MenuToggle.astro";
 <header>
   <div class="container">
     <div class="space-out">
-      <p>LEONARD</p>
+      <a class="logo" href="#intro">LEONARD</a>
       <nav
         class="primary-navigation"
         id="primary-navigation"
         data-visible="false"
       >
         <ul>
-          <li><a href="#" class="active">HOME</a></li>
+          <li><a href="#intro" class="active">HOME</a></li>
           <li><a href="#what-i-do">WHAT I DO</a></li>
           <li><a href="#my-tools">MY TOOLS</a></li>
           <li><a href="#portfolio">PORTFOLIO</a></li>
-          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#about">ABOUT ME</a></li>
           <li><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>
@@ -32,12 +32,26 @@ import MenuToggle from "./MenuToggle.astro";
   header {
     color: var(--clr-neutral-100);
     background-color: var(--clr-neutral-700);
-    padding: 1.2rem 0;
+    padding: 1.4rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    box-shadow: 0 2px 2px 0 #0f0f0f;
+    transform: translateY(-110%);
+    transition: transform 0.3s ease-in-out;
   }
 
-  p {
-    font-size: var(--fs-xl);
+  .show {
+    transform: translateY(0);
+  }
+
+  a.logo {
+    font-size: var(--fs-lg);
     font-weight: var(--fw-semi-bold);
+    cursor: pointer;
+    color: var(--clr-neutral-100);
   }
 
   ul {
@@ -52,11 +66,11 @@ import MenuToggle from "./MenuToggle.astro";
     font-weight: var(--fw-regular);
   }
 
-  a {
+  li a {
     color: var(--clr-neutral-100);
   }
 
-  a.active {
+  li a.active {
     color: var(--clr-primary-400);
   }
 
@@ -64,7 +78,7 @@ import MenuToggle from "./MenuToggle.astro";
     display: none;
   }
 
-  @media (max-width: 720px) {
+  @media (max-width: 770px) {
     .menu {
       display: block;
     }
@@ -98,7 +112,7 @@ import MenuToggle from "./MenuToggle.astro";
     }
 
     li {
-      font-size: var(--fs-xl);
+      font-size: 1.5rem;
     }
   }
 </style>

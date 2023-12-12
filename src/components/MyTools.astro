@@ -1,0 +1,46 @@
+---
+import Icon from "astro-icon";
+import myTools from "../data/myTools.json";
+---
+
+<section id="my-tools">
+  <div class="container">
+    <h2 class="section-heading">MY TOOLS</h2>
+    <div class="tools">
+      {
+        myTools.map((tool) => (
+          <div class="tool">
+            <Icon name={tool.icon} height="110px" fill={tool.color} />
+            <p>{tool.name}</p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    background-color: var(--clr-neutral-900);
+    padding-block: 6rem;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .tools {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-items: center;
+    gap: 2rem;
+  }
+
+  .tool {
+    display: grid;
+    justify-items: center;
+    color: var(--clr-neutral-100);
+    font-weight: var(--fw-semi-bold);
+    gap: 1rem;
+  }
+</style>

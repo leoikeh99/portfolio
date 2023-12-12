@@ -1,0 +1,89 @@
+---
+
+---
+
+<section id="about">
+  <div class="container">
+    <div class="content">
+      <div class="main-content">
+        <h2 class="section-heading">ABOUT ME</h2>
+        <h3>FULLSTACK DEVELOPER</h3>
+        <p>
+          I am a passionate web developer with a love for building innovative
+          and user-friendly applications. My expertise lies in HTML, CSS, and
+          JavaScript, and I am highly skilled in utilizing ReactJS for dynamic
+          and interactive front-end development. My background in both MongoDB
+          and Postgres provides a versatile toolset for back-end development,
+          and I am comfortable using NodeJS and NextJS to create efficient and
+          scalable web applications. Whether it's a simple website or a complex
+          web app, I am dedicated to delivering outstanding results that meet
+          the needs of my clients.
+        </p>
+        <p>
+          I enjoy programming, building applications and working with new
+          technologies.
+        </p>
+      </div>
+      <div class="image">
+        <img src="/images/profilepic.jpg" alt="avatar" />
+      </div>
+    </div>
+  </div>
+
+  <style>
+    section {
+      background-color: var(--clr-neutral-900);
+      padding-block: 6rem;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: var(--fs-lg);
+      font-weight: var(--fw-bold);
+      color: var(--clr-primary-400);
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      color: var(--clr-neutral-300);
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: 55% 45%;
+    }
+
+    .image {
+      display: grid;
+      place-items: center;
+    }
+
+    .image img {
+      height: 200px;
+      aspect-ratio: 1;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid var(--clr-primary-400);
+    }
+
+    @media (max-width: 913px) {
+      .content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      h2,
+      h3,
+      p {
+        text-align: center;
+      }
+
+      .image {
+        order: -1;
+      }
+    }
+  </style>
+</section>

@@ -1,0 +1,184 @@
+---
+import Icon from "astro-icon";
+---
+
+<section id="contact">
+  <div class="container">
+    <div class="content">
+      <div class="contact-info">
+        <h2 class="section-heading">CONTACT ME</h2>
+        <div class="details">
+          <p>
+            <span
+              ><Icon
+                name="phone-solid"
+                height="15px"
+                width="15px"
+                fill="#fff"
+              /></span
+            >
+             (+234) 809-448-2648
+          </p>
+          <p>
+            <span
+              ><Icon
+                name="envelope-solid"
+                height="15px"
+                width="15px"
+                fill="#fff"
+              /></span
+            >
+             leoikeh99@gmail.com
+          </p>
+          <p>
+            <span
+              ><Icon
+                name="location-dot-solid"
+                height="15px"
+                width="15px"
+                fill="#fff"
+              /></span
+            >
+             8 Shofidiya, off Masha Surulere, Lagos.
+          </p>
+        </div>
+        <div class="socials">
+          <a href=""
+            ><Icon name="linkedin" height="40px" width="40px" fill="#fff" /></a
+          ><a href=""
+            ><Icon name="github" height="40px" width="40px" fill="#fff" /></a
+          >
+        </div>
+      </div>
+      <form action="">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" placeholder="Enter your name" name="name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" placeholder="Enter your email" name="email" />
+        </div><div class="form-group">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" placeholder="Enter your message"
+          ></textarea>
+        </div>
+        <button type="submit">Send me</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    background-color: var(--clr-neutral-700);
+    padding-block: 6rem;
+  }
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  .content {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .contact-info {
+    flex-basis: 50%;
+  }
+
+  .details {
+    margin-bottom: 2rem;
+  }
+
+  .details p {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: 1rem;
+    color: var(--clr-neutral-300);
+    font-weight: var(--fw-semi-bold);
+  }
+
+  .details p span {
+    min-height: 45px;
+    min-width: 45px;
+    border-radius: 50%;
+    border: 2px solid var(--clr-neutral-100);
+    display: grid;
+    place-items: center;
+  }
+
+  .contact-info .socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  form > * {
+    display: block;
+  }
+
+  form {
+    display: grid;
+    gap: 1rem;
+    flex-basis: 50%;
+  }
+
+  .form-group > * {
+    display: block;
+  }
+
+  label {
+    color: var(--clr-neutral-100);
+    margin-bottom: 0.2rem;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.8rem 0.5rem;
+    border: 2px solid var(--clr-neutral-300);
+    background-color: transparent;
+    color: var(--clr-neutral-100);
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: var(--clr-neutral-300);
+    font-family: inherit;
+    font-size: var(--fs-sm);
+  }
+
+  input:focus,
+  textarea:focus {
+    outline: 1px solid var(--clr-primary-400);
+    border-color: var(--clr-primary-400);
+  }
+
+  textarea {
+    height: 150px;
+  }
+
+  button {
+    background-color: var(--clr-primary-400);
+    color: var(--clr-neutral-100);
+    font-weight: var(--fw-semi-bold);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+  }
+
+  button:hover,
+  button:focus {
+    background-color: var(--clr-primary-500);
+  }
+
+  @media (max-width: 884px) {
+    .content {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+</style>

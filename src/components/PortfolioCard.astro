@@ -1,0 +1,122 @@
+---
+interface Props {
+  name: string;
+  desc: string;
+  image: string;
+  live: string;
+  code: string;
+  techs: {
+    name: string;
+    icon?: string;
+    color?: string;
+  }[];
+}
+
+import Icon from "astro-icon";
+const { name, desc, image, techs, live, code } = Astro.props;
+---
+
+<div class="portfolio-card">
+  <div>
+    <img src={image} alt="" />
+    <div class="content">
+      <h3>{name}</h3>
+      <p>{desc}</p>
+      <div class="tools">
+        {
+          techs.map((tool) => (
+            <span>
+              {tool.icon && (
+                <Icon
+                  height="15px"
+                  width="15px"
+                  name={tool.icon}
+                  fill={tool.color}
+                />
+              )}
+              {tool.name}
+            </span>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+  <div class="links">
+    <a href={live} target="_blank" rel="noopener noreferrer" class="btnLink">
+      <Icon height="15px" width="15px" name="link" fill="#fff" /> View Live
+    </a>
+    <a href={code} target="_blank" rel="noopener noreferrer" class="btnLink">
+      <Icon height="15px" width="15px" name="github" fill="#fff" />{" "}
+       View Code
+    </a>
+  </div>
+</div>
+
+<style>
+  .portfolio-card {
+    background-color: #131212;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (max-width: 720px) {
+      max-width: 400px;
+    }
+  }
+
+  .portfolio-card .content {
+    display: grid;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+  }
+
+  .portfolio-card img {
+    height: auto;
+  }
+
+  .portfolio-card h3 {
+    font-size: 1.17rem;
+    font-weight: var(--fw-bold);
+    color: var(--clr-neutral-100);
+  }
+
+  .portfolio-card p {
+    color: var(--text-clr-secondary);
+  }
+
+  .portfolio-card .tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .portfolio-card span {
+    font-size: 0.8rem;
+    font-weight: var(--fw-medium);
+    color: var(--clr-neutral-100);
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    border: 1px solid var(--clr-neutral-100);
+    padding: 0.2rem;
+  }
+
+  .portfolio-card .links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-inline: 1rem;
+    padding-bottom: 1.5rem;
+    gap: 0.5rem;
+  }
+
+  .portfolio-card .links .btnLink {
+    padding: 1rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: var(--fs-md);
+  }
+</style>
