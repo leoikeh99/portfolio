@@ -17,6 +17,23 @@
       ]
     },
     {
+      "image":"/images/devlinks.png",
+      "name": "Dev Links",
+      "desc": "DevLink Hub is a one-stop destination where tech enthusiasts, programmers, and software engineers can showcase their online presence, network with like-minded professionals.",
+      "live": "https://link-sharing-app-three.vercel.app/",
+      "code": "https://github.com/leoikeh99/link-sharing-app/",
+      "techs": [ 
+        { "name": "CSS3", "icon": "css3-alt", "color": "#264DE4" },
+        { "name": "TYPESCRIPT", "icon": "typescript", "color": "#3178C6" },
+        { "name": "REACTJS", "icon": "react", "color": "#61DBFB" },
+        {"name":"Styled Components","icon":"styled-components","color":"#DB7093"},
+        {"name":"NextJs"},
+        {"name":"Prisma ORM"},
+        {"name":"MongoDb","icon":"mongodb","color":"#4DB33D"}
+
+      ]
+    },
+    {
       "image": "/images/audiophile.png",
       "name": "Audiophile",
       "desc": "Audiophile is an e-commerce website that enables users to buy audiophile gear.",
@@ -47,19 +64,15 @@
       ]
     },
     {
-      "image":"/images/devlinks.png",
-      "name": "Dev Links",
-      "desc": "DevLink Hub is a one-stop destination where tech enthusiasts, programmers, and software engineers can showcase their online presence, network with like-minded professionals.",
-      "live": "https://link-sharing-app-three.vercel.app/",
-      "code": "https://github.com/leoikeh99/link-sharing-app/",
-      "techs": [ 
-        { "name": "CSS3", "icon": "css3-alt", "color": "#264DE4" },
+      "image":"/images/world-ranks.png",
+      "name": "World Ranks",
+      "desc": "Discover comprehensive information about every country worldwide with our intuitive web app.",
+      "live": "https://world-ranks-sable.vercel.app/",
+      "code": "https://github.com/leoikeh99/world-ranks",
+      "techs": [  
         { "name": "TYPESCRIPT", "icon": "typescript", "color": "#3178C6" },
         { "name": "REACTJS", "icon": "react", "color": "#61DBFB" },
-        {"name":"Styled Components","icon":"styled-components","color":"#DB7093"},
-        {"name":"NextJs"},
-        {"name":"Prisma ORM"},
-        {"name":"MongoDb","icon":"mongodb","color":"#4DB33D"}
+        {"name":"Tailwind CSS","icon":"tailwind","color":"#06B6D4"}
 
       ]
     },
@@ -74,19 +87,6 @@
         { "name": "JAVASCRIPT", "icon": "js", "color": "#F0DB4F" },
         { "name": "REACTJS", "icon": "react", "color": "#61DBFB" },
         {"name":"Styled Components","icon":"styled-components","color":"#DB7093"}
-
-      ]
-    },
-    {
-      "image":"/images/world-ranks.png",
-      "name": "World Ranks",
-      "desc": "Discover comprehensive information about every country worldwide with our intuitive web app.",
-      "live": "https://world-ranks-sable.vercel.app/",
-      "code": "https://github.com/leoikeh99/world-ranks",
-      "techs": [  
-        { "name": "TYPESCRIPT", "icon": "typescript", "color": "#3178C6" },
-        { "name": "REACTJS", "icon": "react", "color": "#61DBFB" },
-        {"name":"Tailwind CSS","icon":"tailwind","color":"#06B6D4"}
 
       ]
     }
