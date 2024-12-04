@@ -48,19 +48,17 @@
       ]
     }, 
     {
-      "image": "/images/task-board.png",
-      "name": "My Task Board",
-      "desc": "Effortlessly organize your tasks and projects with customizable boards. Streamline your workflow and stay on top of your goals with intuitive task management.",
-      "live": "https://my-task-board-ashen.vercel.app/",
-      "code": "https://github.com/leoikeh99/my-task-board", 
-      "techs": [
-        { "name": "NextJs" },
-        { "name": "Tailwind CSS", "icon": "tailwind","color": "#06B6D4" },
-        { "name": "Postgresql", "icon": "postgresql", "color": "#336791" },
-        {"name":"Prisma ORM"},
-        { "name": "TYPESCRIPT", "icon": "typescript", "color": "#3178C6" },
+      "image": "https://res.cloudinary.com/wazza99/image/upload/v1674649040/tictactoe_mblhap.png",
+      "name": "TIC-TAC-TOE online multiplayer game",
+      "desc": "This is a tic-tac-toe game that allows users to play against each other online.",
+      "live": "https://tic-tac-toe-ma15.onrender.com",
+      "code": "https://github.com/leoikeh99/tic-tac-toe-online", 
+      "techs": [ 
+        { "name": "Styled Components", "icon": "styled-components","color": "#DB7093" }, 
+        {"name":"WebSockets"},
+        { "name": "JAVASCRIPT", "icon": "js", "color": "#F0DB4F" },
         {"name":"REACTJS","icon":"react","color":"#61DBFB"},
-        { "name": "NextAuth"}
+        { "name": "NodeJs", "icon": "node", "color": "#68A063" }
       ]
     },
     {

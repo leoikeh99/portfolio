@@ -3,4 +3,5 @@ title: Frontend Development
 icon: laptop-solid
 ---
 
-For me its just become a rule that any application i work on would be well accessible and responsive on all screen sizes.
+Creating responsive and user-friendly interfaces for web applications, and working
+with popular frontend frameworks and libraries such as React, Tailwind CSS and Styled Components.
