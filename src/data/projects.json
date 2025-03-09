@@ -1,8 +1,8 @@
 [
     {
-      "image": "https://res.cloudinary.com/wazza99/image/upload/c_scale,w_1280/v1676274942/kanaban-management.vercel.app_9065eb58-6c32-43c4-8d50-6c06f47e64b8_3_alucwr.png",
-      "name": "Kanaban Task Manager",
-      "desc": "Efficient kanban task manager app uses visual boards to organize tasks and flexible task cards for better productivity.",
+      "image": "/images/unsplash.png",
+      "name": "Unsplash",
+      "desc": "Browse and save unsplash images to your created collections.",
       "live": "https://kanaban-management.vercel.app/",
       "code": "https://github.com/leoikeh99/Kanaban-Management", 
       "techs": [
@@ -10,8 +10,8 @@
         { "name": "CSS3", "icon": "css3-alt", "color": "#264DE4" },
         { "name": "TYPESCRIPT", "icon": "typescript", "color": "#3178C6" },
         { "name": "NextJs"  },
-        { "name": "Postgresql", "icon": "postgresql", "color": "#336791" },
-        { "name": "Context API" },
+        {"name":"MongoDb","icon":"mongodb","color":"#4DB33D"},
+        { "name": "ShadcnUI" },
         { "name": "Prisma ORM" },
         { "name": "NextAuth" }
       ]
@@ -22,11 +22,10 @@
       "desc": "DevLink Hub is a one-stop destination where tech enthusiasts, programmers, and software engineers can showcase their online presence, network with like-minded professionals.",
       "live": "https://link-sharing-app-three.vercel.app/",
       "code": "https://github.com/leoikeh99/link-sharing-app/",
-      "techs": [ 
-        { "name": "CSS3", "icon": "css3-alt", "color": "#264DE4" },
+      "techs": [  
         { "name": "TYPESCRIPT", "icon": "typescript", "color": "#3178C6" },
         { "name": "REACTJS", "icon": "react", "color": "#61DBFB" },
-        {"name":"Styled Components","icon":"styled-components","color":"#DB7093"},
+        {"name":"Tailwind CSS","icon":"tailwind","color":"#06B6D4"},
         {"name":"NextJs"},
         {"name":"Prisma ORM"},
         {"name":"MongoDb","icon":"mongodb","color":"#4DB33D"}
